@@ -36,8 +36,12 @@ height:15vh;
 flex-direction: column;
 }
 .border{
-    border-bottom: 2px solid black;
-    margin-bottom: 1px;
+    border-bottom: 3px solid black;
+    margin-bottom: .1rem;
+}
+.border2{
+    border-bottom: 1px solid black;
+    margin-bottom: 3rem;
 }
 .contact_info h2{
     border-top: solid  1px black;
@@ -52,6 +56,7 @@ flex-direction: column;
 .contact_info{
     padding:0;
     border:none ;
+    position: relative;
 }
 .contact_info input::placeholder{
     text-align: right;
@@ -88,6 +93,9 @@ flex-direction: column;
 }
 
 .newsletter_bttm{
+    padding-top:3rem;
+
+    position: relative;
     border:none;
     border-top:1.5px solid black;
 }
@@ -121,10 +129,10 @@ fieldset{
     transition-duration: 1s;
 }
 fieldset:hover{
-    background-color: darkgray;
+    background-color: darkseagreen;
 }
 body{
-    background-color: mediumvioletred;
+    background-color:lightgrey;
 }
 
 
@@ -142,7 +150,7 @@ body{
     .contact_info input,select{
         width: 60%;
         
-    };
+    }
     .last_br{
         display: none;
     }
@@ -159,5 +167,19 @@ body{
 /* fixing br for input in seconf fieldset */
 .newsletter_bttm br{
     display: block
+    
+}
+.legend1{
+position: absolute;
+top: 1rem;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.legend2{
+    position: absolute;
+    top: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     
 }

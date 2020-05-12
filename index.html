@@ -16,11 +16,13 @@
        </header>
        <main>
         
-           <section>
+           
                <form>
                    <fieldset class="contact_info">
+                    <legend class="legend2">Contact Information</legend>
                        <p class="border"></p>
-                       <h2>Contact Information</h2>
+                       <p class="border2"></p>
+                       
                        <label for="fullname" >Full Name</label><br>
                        <input type="text" name=fullname id="fullname" placeholder="required" required><br >
 
@@ -36,12 +38,13 @@
                        <label for="city"> City</label><br>
                        <input name="city" id="city" type="text"><br>
 
-                       <label for="state">State</label><br>
-                       <select  name="state" >
-                        <option value="Please Select A State" >Please Select A State</option>
-                        <option value="newyork">New York</option>
-                        <option value="tenesse">Tenesse<option>
-                       </select><br>
+                      <label for="state">State</label><br>
+                       <select  name="state" id="state" >
+                        <option value="">Please select a state</option>
+                        <option value="Carlifornia" >Carlifornia</option>
+                        <option value="tenesse">Tenesse</option>
+                       </select>
+                       <br>
                        
 
                        
@@ -51,7 +54,8 @@
                    </fieldset>
 
                    <fieldset class="newsletter_bttm">
-                     <h3>Newsletter</h3>
+                     <legend class="legend1">Newsletter</legend>
+
                        
                      <p>Select the newletters you would like to recieve</p>
                      
@@ -62,7 +66,7 @@
 
                      <label for="newletterformat" class="newsletter_format">Newsletter Format</label><br>
                      <input name="newletterformat" id="html" type="radio" value="HTML">HTML<br class="newsletter_br">
-                     <input type="radio" name="newletterformat" id="plain" value="Plain text">Plain text<br class="newsletter_br">
+                     <input type="radio" name="newletterformat" id="newletterformat" value="Plain text">Plain text<br class="newsletter_br">
 
 
 
@@ -71,7 +75,7 @@
                    </fieldset>
                    <button type="submit" id="signup">Sign Up</button>
                </form>
-           </section>
+           
        </main>
     </body>
 </html>
