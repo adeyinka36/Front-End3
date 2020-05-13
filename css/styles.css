@@ -6,11 +6,13 @@
     font-size: 1.3rem;
    
     }
+
+
 input:focus{
     outline: 1px solid blue;
-    
+    transition: outline 1s;
+   
 }
-
 h1{
     background-color: darkslategray;
     display: flex;
@@ -135,7 +137,9 @@ body{
     background-color:lightgrey;
 }
 
-
+#zipcode{
+    width: 50%;
+}
 
 @media(min-width:768px){
 
@@ -162,6 +166,9 @@ body{
     }
     .topics_textarea{
         margin-top: 0;
+    }
+    #zipcode{
+        width: 20%;
     }
 }
 /* fixing br for input in seconf fieldset */

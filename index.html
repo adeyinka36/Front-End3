@@ -30,13 +30,13 @@
                        <input name="emailaddress" id="emailaddress" type="email" placeholder="required" required><br>
 
                        <label for="phonenumber"> Phone Number</label><br>
-                       <input name="phonenumber" id="phonenumber" type="tel"><br>
+                       <input name="phonenumber" id="phonenumber" type="tel" placeholder="555-555-555"><br>
 
                        <label for="street">Street Address</label><br>
-                       <input name="street" id="street" type="text"><br>
+                       <input name="street" id="street" type="text" placeholder="Street"><br>
 
                        <label for="city"> City</label><br>
-                       <input name="city" id="city" type="text"><br>
+                       <input name="city" id="city" type="text" placeholder="London"><br>
 
                       <label for="state">State</label><br>
                        <select  name="state" id="state" >
@@ -50,7 +50,7 @@
                        
 
                        <label for="zipcode">Zip Code</label><br>
-                       <input name="zipcode" id="zipcode" type="text">
+                       <input name="zipcode" id="zipcode" type="text" placeholder="wc1">
                    </fieldset>
 
                    <fieldset class="newsletter_bttm">
@@ -60,18 +60,18 @@
                      <p>Select the newletters you would like to recieve</p>
                      
                      
-                     <input type="checkbox" name="newsletter" id="htmlnews" value="HTML News">HTML News<br class="newsletter_br">
-                     <input type="checkbox" name="newletters" id="cssnews" value="CSS News">CSS News<br class="newsletter_br">
-                     <input id="javascriptnews" name="newletters"  type="checkbox" value="Javascript News">Javascript News<br class="newsletter_br">
+                     <input type="checkbox" name="newsletter" id="htmlnews" value="HTML News"><label for="htmlnews">HTML News</label><br class="newsletter_br">
+                     <input type="checkbox" name="newletters" id="cssnews" value="CSS News"><label for="cssnews">CSS News</label><br class="newsletter_br">
+                     <input id="javascriptnews" name="newletters"  type="checkbox" value="Javascript News"><label for="javascriptnews">Javascript News</label><br class="newsletter_br">
 
-                     <label for="newletterformat" class="newsletter_format">Newsletter Format</label><br>
-                     <input name="newletterformat" id="html" type="radio" value="HTML">HTML<br class="newsletter_br">
-                     <input type="radio" name="newletterformat" id="newletterformat" value="Plain text">Plain text<br class="newsletter_br">
+                     <p class="newsletter_format">Newsletter Format</p>
+                     <input name="newletterformat" id="html" type="radio" value="HTML"><label for="html">HTML</label><br class="newsletter_br">
+                     <input type="radio" name="newletterformat" id="plaintext" value="Plain text"><label for="plaintext">Plain Text</label><br class="newsletter_br">
 
 
 
                     <label for="othertopics" class="other_topics" id="other_topics">Other topics you'd like to hear about</label><br class="last_br">
-                    <textarea name="othertopics" id="othertopics" class="topics_textarea"></textarea><br>
+                    <textarea name="othertopics" id="othertopics" class="topics_textarea" placeholder="Other activities..."></textarea><br>
                    </fieldset>
                    <button type="submit" id="signup">Sign Up</button>
                </form>
